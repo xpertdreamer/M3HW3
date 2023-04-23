@@ -20,5 +20,10 @@ public class Main {
 
         tree.remove(10);
         System.out.println(tree.containsNode(10));
+
+        System.out.println(tree.containsNode(5));
+
+        tree.remove(5);
+        System.out.println(tree.containsNode(5));
     }
 }

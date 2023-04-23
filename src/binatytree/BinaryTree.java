@@ -6,7 +6,7 @@ public class BinaryTree {
     public BinaryTree() {
         root = null;
     }
-    //adding recursive cycle
+    //adding loop (recursive)
     private Node addRecursive(Node current, int data) {
         //if empty cell was found - create new node and put data here
         if (current == null) {
@@ -22,7 +22,7 @@ public class BinaryTree {
         }
         return current;
     }
-    //removing recursive cycle
+    //removing loop (recursive)
     private Node deleteRecursive(Node current, int value) {
         //if value wasnt found - return null
         if (current == null) {
@@ -67,7 +67,7 @@ public class BinaryTree {
     public void add(int value) {
         root = addRecursive(root, value);
     }
-    //cycle for checking of existence of node
+    //loop for checking of existence of node
     private boolean containsNodeRecursive(Node current, int data) {
         //if node wasnt found - return false
         if (current == null) {
